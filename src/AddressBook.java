@@ -17,8 +17,7 @@ public class AddressBook {
     }
 
     public void removeBuddy (BuddyInfo buddyInfo) {
-        if (this.buddyList.contains(buddyInfo)) {
-            this.buddyList.remove(buddyInfo);
+        if (this.buddyList.remove(buddyInfo)) {
             System.out.println(buddyInfo.getName() + " was removed");
             return;
         }
