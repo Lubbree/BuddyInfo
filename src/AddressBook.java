@@ -16,6 +16,7 @@ public class AddressBook {
         System.out.println(buddy.getName() + " was added");
     }
 
+    //Removes a item from buddylist
     public void removeBuddy (BuddyInfo buddyInfo) {
         if (this.buddyList.remove(buddyInfo)) {
             System.out.println(buddyInfo.getName() + " was removed");
